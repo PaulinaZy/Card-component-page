@@ -5,6 +5,7 @@ $bg-color: #0D192C;
 $card-color: #15263F;
 $p-color: #8BACD9;
 $cyan: #00FFF8;
+$dark-blue: #2E405A;
 
 //FONT
 $font: 'Outfit',
@@ -17,4 +18,10 @@ $p-l: 18px;
 $p-m: 16px;
 $p-s: 15px;
 
-//BREAKPOINTS
+//BREAKPOINT
+
+@mixin breakpoint {
+    @media (min-width: 786px) {
+        @content;
+    }
+}
